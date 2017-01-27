@@ -16,6 +16,7 @@
 		DEF0DC431E3C0DEA00BBC7CE /* PsychicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */; };
 		DEF0DC461E3C0F7A00BBC7CE /* PsychicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC451E3C0F7A00BBC7CE /* PsychicListViewController.swift */; };
 		DEF0DC491E3C100700BBC7CE /* PsychicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC481E3C100700BBC7CE /* PsychicAPI.swift */; };
+		DEF0DC4B1E3C147300BBC7CE /* Arrays+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC4A1E3C147300BBC7CE /* Arrays+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychicCell.swift; sourceTree = "<group>"; };
 		DEF0DC451E3C0F7A00BBC7CE /* PsychicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychicListViewController.swift; sourceTree = "<group>"; };
 		DEF0DC481E3C100700BBC7CE /* PsychicAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychicAPI.swift; sourceTree = "<group>"; };
+		DEF0DC4A1E3C147300BBC7CE /* Arrays+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Arrays+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				DEF0DC251E3C033800BBC7CE /* Assets.xcassets */,
 				DEF0DC271E3C033800BBC7CE /* LaunchScreen.storyboard */,
 				DEF0DC2A1E3C033800BBC7CE /* Info.plist */,
+				DEF0DC4A1E3C147300BBC7CE /* Arrays+.swift */,
 			);
 			path = Psychics;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF0DC461E3C0F7A00BBC7CE /* PsychicListViewController.swift in Sources */,
+				DEF0DC4B1E3C147300BBC7CE /* Arrays+.swift in Sources */,
 				DEF0DC1F1E3C033800BBC7CE /* AppDelegate.swift in Sources */,
 				DEF0DC431E3C0DEA00BBC7CE /* PsychicCell.swift in Sources */,
 				DEF0DC491E3C100700BBC7CE /* PsychicAPI.swift in Sources */,
