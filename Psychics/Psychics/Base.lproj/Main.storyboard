@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,18 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PsychicCell" rowHeight="240" id="bmR-Fl-NjR">
-                                <rect key="frame" x="0.0" y="28" width="375" height="240"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PsychicCell" rowHeight="280" id="bmR-Fl-NjR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="280"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bmR-Fl-NjR" id="EZv-Hy-UMf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="239"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample-Psychic" translatesAutoresizingMaskIntoConstraints="NO" id="9oy-Zs-sQe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHU-iG-8zs" userLabel="Transparency Layer">
-                                            <rect key="frame" x="0.0" y="149.5" width="375" height="30"/>
+                                            <rect key="frame" x="0.0" y="169.5" width="375" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stephanie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJD-1E-7bx">
                                                     <rect key="frame" x="16" y="4" width="77" height="21"/>
@@ -37,23 +38,50 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4.50/hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeP-P2-ZNU">
+                                                    <rect key="frame" x="304.5" y="5" width="62.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5078125" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="eeP-P2-ZNU" secondAttribute="trailing" constant="8" id="IlU-da-x8k"/>
                                                 <constraint firstItem="ZJD-1E-7bx" firstAttribute="leading" secondItem="HHU-iG-8zs" secondAttribute="leading" constant="16" id="gyZ-Gj-Gwa"/>
                                                 <constraint firstItem="ZJD-1E-7bx" firstAttribute="centerY" secondItem="HHU-iG-8zs" secondAttribute="centerY" id="hz4-Bz-fCj"/>
                                                 <constraint firstAttribute="height" constant="30" id="meA-ka-Zqq"/>
+                                                <constraint firstItem="eeP-P2-ZNU" firstAttribute="centerY" secondItem="HHU-iG-8zs" secondAttribute="centerY" id="sFi-HB-KhD"/>
                                             </constraints>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clairvoyant,Empath,Dream analyst,Channeling,Clairaudient,Clairsentient" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-n7-eCo">
+                                            <rect key="frame" x="8" y="207" width="359" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love &amp; relationships,Career &amp; work,Destiny &amp; life path,Money &amp; finance,Past lives" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0o-Ta-hm2">
+                                            <rect key="frame" x="8" y="244" width="359" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="HHU-iG-8zs" firstAttribute="trailing" secondItem="9oy-Zs-sQe" secondAttribute="trailing" id="4XZ-LV-DaY"/>
                                         <constraint firstAttribute="trailing" secondItem="9oy-Zs-sQe" secondAttribute="trailing" id="7hC-lR-cTB"/>
+                                        <constraint firstItem="Ngd-n7-eCo" firstAttribute="leading" secondItem="EZv-Hy-UMf" secondAttribute="leadingMargin" id="AoA-Jn-fjL"/>
                                         <constraint firstItem="HHU-iG-8zs" firstAttribute="bottom" secondItem="9oy-Zs-sQe" secondAttribute="bottom" id="EtK-s8-sJb"/>
                                         <constraint firstItem="HHU-iG-8zs" firstAttribute="leading" secondItem="9oy-Zs-sQe" secondAttribute="leading" id="KD4-ky-noJ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ngd-n7-eCo" secondAttribute="trailing" id="PpW-4H-xSk"/>
                                         <constraint firstItem="9oy-Zs-sQe" firstAttribute="top" secondItem="EZv-Hy-UMf" secondAttribute="top" id="ZlW-9v-0aA"/>
-                                        <constraint firstAttribute="bottom" secondItem="9oy-Zs-sQe" secondAttribute="bottom" constant="60" id="fQC-2M-iOb"/>
+                                        <constraint firstItem="B0o-Ta-hm2" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EZv-Hy-UMf" secondAttribute="bottomMargin" id="fKi-b2-Xa5"/>
+                                        <constraint firstAttribute="bottom" secondItem="9oy-Zs-sQe" secondAttribute="bottom" constant="80" id="fQC-2M-iOb"/>
+                                        <constraint firstItem="B0o-Ta-hm2" firstAttribute="leading" secondItem="EZv-Hy-UMf" secondAttribute="leadingMargin" id="jAh-7T-dJn"/>
                                         <constraint firstItem="9oy-Zs-sQe" firstAttribute="leading" secondItem="EZv-Hy-UMf" secondAttribute="leading" id="kH6-fN-7zP"/>
+                                        <constraint firstItem="Ngd-n7-eCo" firstAttribute="top" secondItem="9oy-Zs-sQe" secondAttribute="bottom" constant="8" id="ovj-Vn-ypD"/>
+                                        <constraint firstItem="B0o-Ta-hm2" firstAttribute="top" secondItem="Ngd-n7-eCo" secondAttribute="bottom" constant="8" id="xD3-tg-R5p"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="B0o-Ta-hm2" secondAttribute="trailing" id="zwn-ew-DtS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>

@@ -79,6 +79,7 @@ struct Psychic {
 }
 
 fileprivate struct JSONKeys {
+    
     static let extId = "extId"
     static let lineName = "lineName"
     static let groupId = "groupId"
@@ -97,4 +98,5 @@ fileprivate struct JSONKeys {
     static let specialties = "specialties"
     static let style = "style"
     static let serviceStartYear = "serviceStartYear"
+    
 }
