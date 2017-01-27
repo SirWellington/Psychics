@@ -11,10 +11,13 @@ import UIKit
 
 class PsychicListViewController: UITableViewController {
     
+    fileprivate let main = OperationQueue.main
     fileprivate var psychics: [Psychic] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadStores()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -24,6 +27,27 @@ class PsychicListViewController: UITableViewController {
 
 //MARK: API Calls 
 
+fileprivate extension PsychicListViewController {
+    
+    func loadStores() {
+        
+        showIndicator()
+        PsychicAPI.instance.loadPsychics() { psychics in
+            
+            defer {
+                self.hideIndicator()
+            }
+            
+            self.psychics = psychics
+            
+            self.main.addOperation {
+                
+                let section = IndexSet(integer: 0)
+                self.tableView.reloadSections(section, with: .automatic)
+            }
+        }
+    }
+}
 
 //MARK: TableView Methods
 extension PsychicListViewController {
@@ -34,5 +58,18 @@ extension PsychicListViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return psychics.count
+    }
+}
+
+
+//MARK: Loading Indicator
+fileprivate extension PsychicListViewController {
+    
+    func showIndicator() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func hideIndicator() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 }
