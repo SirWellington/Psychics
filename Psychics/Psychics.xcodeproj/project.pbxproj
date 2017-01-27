@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEF0DC1F1E3C033800BBC7CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */; };
+		DEF0DC211E3C033800BBC7CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC201E3C033800BBC7CE /* ViewController.swift */; };
+		DEF0DC241E3C033800BBC7CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC221E3C033800BBC7CE /* Main.storyboard */; };
+		DEF0DC261E3C033800BBC7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC251E3C033800BBC7CE /* Assets.xcassets */; };
+		DEF0DC291E3C033800BBC7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC271E3C033800BBC7CE /* LaunchScreen.storyboard */; };
+		DEF0DC341E3C033800BBC7CE /* PsychicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEF0DC301E3C033800BBC7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF0DC131E3C033700BBC7CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF0DC1A1E3C033700BBC7CE;
+			remoteInfo = Psychics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEF0DC1B1E3C033800BBC7CE /* Psychics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEF0DC201E3C033800BBC7CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEF0DC231E3C033800BBC7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEF0DC251E3C033800BBC7CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEF0DC281E3C033800BBC7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEF0DC2A1E3C033800BBC7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF0DC2F1E3C033800BBC7CE /* PsychicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsychicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychicsTests.swift; sourceTree = "<group>"; };
+		DEF0DC351E3C033800BBC7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF0DC181E3C033700BBC7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF0DC2C1E3C033800BBC7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEF0DC121E3C033700BBC7CE = {
+			isa = PBXGroup;
+			children = (
+				DEF0DC1D1E3C033800BBC7CE /* Psychics */,
+				DEF0DC321E3C033800BBC7CE /* PsychicsTests */,
+				DEF0DC1C1E3C033800BBC7CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF0DC1C1E3C033800BBC7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0DC1B1E3C033800BBC7CE /* Psychics.app */,
+				DEF0DC2F1E3C033800BBC7CE /* PsychicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF0DC1D1E3C033800BBC7CE /* Psychics */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */,
+				DEF0DC201E3C033800BBC7CE /* ViewController.swift */,
+				DEF0DC221E3C033800BBC7CE /* Main.storyboard */,
+				DEF0DC251E3C033800BBC7CE /* Assets.xcassets */,
+				DEF0DC271E3C033800BBC7CE /* LaunchScreen.storyboard */,
+				DEF0DC2A1E3C033800BBC7CE /* Info.plist */,
+			);
+			path = Psychics;
+			sourceTree = "<group>";
+		};
+		DEF0DC321E3C033800BBC7CE /* PsychicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */,
+				DEF0DC351E3C033800BBC7CE /* Info.plist */,
+			);
+			path = PsychicsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF0DC1A1E3C033700BBC7CE /* Psychics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF0DC381E3C033800BBC7CE /* Build configuration list for PBXNativeTarget "Psychics" */;
+			buildPhases = (
+				DEF0DC171E3C033700BBC7CE /* Sources */,
+				DEF0DC181E3C033700BBC7CE /* Frameworks */,
+				DEF0DC191E3C033700BBC7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Psychics;
+			productName = Psychics;
+			productReference = DEF0DC1B1E3C033800BBC7CE /* Psychics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEF0DC2E1E3C033800BBC7CE /* PsychicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF0DC3B1E3C033800BBC7CE /* Build configuration list for PBXNativeTarget "PsychicsTests" */;
+			buildPhases = (
+				DEF0DC2B1E3C033800BBC7CE /* Sources */,
+				DEF0DC2C1E3C033800BBC7CE /* Frameworks */,
+				DEF0DC2D1E3C033800BBC7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF0DC311E3C033800BBC7CE /* PBXTargetDependency */,
+			);
+			name = PsychicsTests;
+			productName = PsychicsTests;
+			productReference = DEF0DC2F1E3C033800BBC7CE /* PsychicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF0DC131E3C033700BBC7CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Wellington Moreno";
+				TargetAttributes = {
+					DEF0DC1A1E3C033700BBC7CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DEF0DC2E1E3C033800BBC7CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DEF0DC1A1E3C033700BBC7CE;
+					};
+				};
+			};
+			buildConfigurationList = DEF0DC161E3C033700BBC7CE /* Build configuration list for PBXProject "Psychics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEF0DC121E3C033700BBC7CE;
+			productRefGroup = DEF0DC1C1E3C033800BBC7CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF0DC1A1E3C033700BBC7CE /* Psychics */,
+				DEF0DC2E1E3C033800BBC7CE /* PsychicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF0DC191E3C033700BBC7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF0DC291E3C033800BBC7CE /* LaunchScreen.storyboard in Resources */,
+				DEF0DC261E3C033800BBC7CE /* Assets.xcassets in Resources */,
+				DEF0DC241E3C033800BBC7CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF0DC2D1E3C033800BBC7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF0DC171E3C033700BBC7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF0DC211E3C033800BBC7CE /* ViewController.swift in Sources */,
+				DEF0DC1F1E3C033800BBC7CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF0DC2B1E3C033800BBC7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF0DC341E3C033800BBC7CE /* PsychicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF0DC311E3C033800BBC7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF0DC1A1E3C033700BBC7CE /* Psychics */;
+			targetProxy = DEF0DC301E3C033800BBC7CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEF0DC221E3C033800BBC7CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF0DC231E3C033800BBC7CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEF0DC271E3C033800BBC7CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF0DC281E3C033800BBC7CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEF0DC361E3C033800BBC7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF0DC371E3C033800BBC7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF0DC391E3C033800BBC7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Psychics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlookamusements.Psychics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DEF0DC3A1E3C033800BBC7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Psychics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlookamusements.Psychics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DEF0DC3C1E3C033800BBC7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PsychicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlookamusements.PsychicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Psychics.app/Psychics";
+			};
+			name = Debug;
+		};
+		DEF0DC3D1E3C033800BBC7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PsychicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlookamusements.PsychicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Psychics.app/Psychics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF0DC161E3C033700BBC7CE /* Build configuration list for PBXProject "Psychics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF0DC361E3C033800BBC7CE /* Debug */,
+				DEF0DC371E3C033800BBC7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF0DC381E3C033800BBC7CE /* Build configuration list for PBXNativeTarget "Psychics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF0DC391E3C033800BBC7CE /* Debug */,
+				DEF0DC3A1E3C033800BBC7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEF0DC3B1E3C033800BBC7CE /* Build configuration list for PBXNativeTarget "PsychicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF0DC3C1E3C033800BBC7CE /* Debug */,
+				DEF0DC3D1E3C033800BBC7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEF0DC131E3C033700BBC7CE /* Project object */;
+}
