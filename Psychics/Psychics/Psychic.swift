@@ -52,7 +52,10 @@ struct Psychic {
             return nil
         }
         
-        let images: [URL] = imagesArray.flatMap(URL.init)
+        let images: [URL] = imagesArray
+            .map() { $0.replacingOccurrences(of: "test-www", with: "www") } //Fixes broken test image links
+            .flatMap(URL.init) //Converts Strings to URLs
+        
         let skills = skillsString.components(separatedBy: ",")
         
         self.extId = extId
