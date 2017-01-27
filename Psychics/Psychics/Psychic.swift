@@ -10,7 +10,7 @@ import Foundation
 
 struct Psychic {
     
-    let extID: String
+    let extId: String
     let lineName: String
     let groupId: String
     let usp: String
@@ -27,6 +27,52 @@ struct Psychic {
     let skills: [String]
     let specialties: String
     let style: String
+    
+    
+    init?(jsonDictionary json: NSDictionary) {
+        
+        guard let extId = json[JSONKeys.extId] as? String,
+              let lineName = json[JSONKeys.lineName] as? String,
+              let groupId = json[JSONKeys.groupId] as? String,
+              let usp = json[JSONKeys.usp] as? String,
+              let basePrice = json[JSONKeys.basePrice] as? Double,
+              let isCustomerPick = json[JSONKeys.isCustomerPick] as? Bool,
+              let isStaffPick = json[JSONKeys.isStaffPick] as? Bool,
+              let isRisingStar = json[JSONKeys.isRisingStar] as? Bool,
+              let customerPrice = json[JSONKeys.customerPrice] as? Double,
+              let lineStatus = json[JSONKeys.lineStatus] as? String,
+              let lineStatusDisplay = json[JSONKeys.lineStatusDisplay] as? String,
+              let isPsychicAvailable = json[JSONKeys.isPsychicAvailable] as? Bool,
+              let imagesArray = json[JSONKeys.images] as? NSArray as? [String],
+              let tools = json[JSONKeys.tools] as? String,
+              let skillsString = json[JSONKeys.skills] as? String,
+              let specialties = json[JSONKeys.specialties] as? String,
+              let style = json[JSONKeys.style] as? String
+        else {
+            return nil
+        }
+        
+        let images: [URL] = imagesArray.flatMap(URL.init)
+        let skills = skillsString.components(separatedBy: ",")
+        
+        self.extId = extId
+        self.lineName = lineName
+        self.groupId = groupId
+        self.usp = usp
+        self.basePrice = basePrice
+        self.isCustomerPick = isCustomerPick
+        self.isStaffPick = isStaffPick
+        self.isRisingStar = isRisingStar
+        self.customerPrice = customerPrice
+        self.lineStatus = lineStatus
+        self.lineStatusDisplay = lineStatusDisplay
+        self.isPsychicAvailable = isPsychicAvailable
+        self.images = images
+        self.tools = tools
+        self.skills = skills
+        self.specialties = specialties
+        self.style = style
+    }
 }
 
 fileprivate struct JSONKeys {
