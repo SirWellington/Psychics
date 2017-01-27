@@ -13,6 +13,7 @@
 		DEF0DC261E3C033800BBC7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC251E3C033800BBC7CE /* Assets.xcassets */; };
 		DEF0DC291E3C033800BBC7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC271E3C033800BBC7CE /* LaunchScreen.storyboard */; };
 		DEF0DC341E3C033800BBC7CE /* PsychicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */; };
+		DEF0DC401E3C058A00BBC7CE /* Psychic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DEF0DC2F1E3C033800BBC7CE /* PsychicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsychicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychicsTests.swift; sourceTree = "<group>"; };
 		DEF0DC351E3C033800BBC7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Psychic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		DEF0DC1D1E3C033800BBC7CE /* Psychics */ = {
 			isa = PBXGroup;
 			children = (
+				DEF0DC3E1E3C03D900BBC7CE /* Model */,
 				DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */,
 				DEF0DC201E3C033800BBC7CE /* ViewController.swift */,
 				DEF0DC221E3C033800BBC7CE /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				DEF0DC351E3C033800BBC7CE /* Info.plist */,
 			);
 			path = PsychicsTests;
+			sourceTree = "<group>";
+		};
+		DEF0DC3E1E3C03D900BBC7CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			files = (
 				DEF0DC211E3C033800BBC7CE /* ViewController.swift in Sources */,
 				DEF0DC1F1E3C033800BBC7CE /* AppDelegate.swift in Sources */,
+				DEF0DC401E3C058A00BBC7CE /* Psychic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
