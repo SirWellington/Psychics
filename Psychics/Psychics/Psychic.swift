@@ -11,7 +11,22 @@ import Foundation
 struct Psychic {
     
     let extID: String
-    
+    let lineName: String
+    let groupId: String
+    let usp: String
+    let basePrice: Double
+    let isCustomerPick: Bool
+    let isStaffPick: Bool
+    let isRisingStar: Bool
+    let customerPrice: Double
+    let lineStatus: String
+    let lineStatusDisplay: String
+    let isPsychicAvailable: Bool
+    let images: [URL]
+    let tools: String
+    let skills: [String]
+    let specialties: String
+    let style: String
 }
 
 fileprivate struct JSONKeys {
