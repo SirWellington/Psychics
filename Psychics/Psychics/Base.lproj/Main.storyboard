@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PsychicCell" rowHeight="280" id="bmR-Fl-NjR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PsychicCell" rowHeight="280" id="bmR-Fl-NjR" customClass="PsychicCell" customModule="Psychics" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="280"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bmR-Fl-NjR" id="EZv-Hy-UMf">
@@ -84,6 +84,13 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="B0o-Ta-hm2" secondAttribute="trailing" id="zwn-ew-DtS"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="psychicCover" destination="9oy-Zs-sQe" id="vRv-XQ-FU9"/>
+                                    <outlet property="psychicName" destination="ZJD-1E-7bx" id="U1t-Ut-jlc"/>
+                                    <outlet property="psychicPrice" destination="eeP-P2-ZNU" id="OEp-L0-5sL"/>
+                                    <outlet property="skills" destination="B0o-Ta-hm2" id="oCa-XI-Wdv"/>
+                                    <outlet property="specialties" destination="Ngd-n7-eCo" id="cfc-3P-Y9m"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

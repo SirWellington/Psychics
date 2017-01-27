@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DEF0DC1F1E3C033800BBC7CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */; };
-		DEF0DC211E3C033800BBC7CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC201E3C033800BBC7CE /* ViewController.swift */; };
 		DEF0DC241E3C033800BBC7CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC221E3C033800BBC7CE /* Main.storyboard */; };
 		DEF0DC261E3C033800BBC7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC251E3C033800BBC7CE /* Assets.xcassets */; };
 		DEF0DC291E3C033800BBC7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF0DC271E3C033800BBC7CE /* LaunchScreen.storyboard */; };
 		DEF0DC341E3C033800BBC7CE /* PsychicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */; };
 		DEF0DC401E3C058A00BBC7CE /* Psychic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */; };
+		DEF0DC431E3C0DEA00BBC7CE /* PsychicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 /* Begin PBXFileReference section */
 		DEF0DC1B1E3C033800BBC7CE /* Psychics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEF0DC201E3C033800BBC7CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEF0DC231E3C033800BBC7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEF0DC251E3C033800BBC7CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF0DC281E3C033800BBC7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychicsTests.swift; sourceTree = "<group>"; };
 		DEF0DC351E3C033800BBC7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Psychic.swift; sourceTree = "<group>"; };
+		DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychicCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 		DEF0DC1D1E3C033800BBC7CE /* Psychics */ = {
 			isa = PBXGroup;
 			children = (
+				DEF0DC411E3C0DDB00BBC7CE /* Cells */,
 				DEF0DC3E1E3C03D900BBC7CE /* Model */,
 				DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */,
-				DEF0DC201E3C033800BBC7CE /* ViewController.swift */,
 				DEF0DC221E3C033800BBC7CE /* Main.storyboard */,
 				DEF0DC251E3C033800BBC7CE /* Assets.xcassets */,
 				DEF0DC271E3C033800BBC7CE /* LaunchScreen.storyboard */,
@@ -105,6 +105,14 @@
 				DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DEF0DC411E3C0DDB00BBC7CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF0DC211E3C033800BBC7CE /* ViewController.swift in Sources */,
 				DEF0DC1F1E3C033800BBC7CE /* AppDelegate.swift in Sources */,
+				DEF0DC431E3C0DEA00BBC7CE /* PsychicCell.swift in Sources */,
 				DEF0DC401E3C058A00BBC7CE /* Psychic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
