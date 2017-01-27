@@ -22,6 +22,9 @@ class PsychicListViewController: UITableViewController {
     }
 }
 
+//MARK: API Calls 
+
+
 //MARK: TableView Methods
 extension PsychicListViewController {
     
