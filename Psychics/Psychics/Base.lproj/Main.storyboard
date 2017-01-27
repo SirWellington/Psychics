@@ -25,11 +25,36 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="239"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oy-Zs-sQe">
-                                            <rect key="frame" x="67" y="55" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample-Psychic" translatesAutoresizingMaskIntoConstraints="NO" id="9oy-Zs-sQe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHU-iG-8zs" userLabel="Transparency Layer">
+                                            <rect key="frame" x="0.0" y="149.5" width="375" height="30"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stephanie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJD-1E-7bx">
+                                                    <rect key="frame" x="16" y="4" width="77" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5078125" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="ZJD-1E-7bx" firstAttribute="leading" secondItem="HHU-iG-8zs" secondAttribute="leading" constant="16" id="gyZ-Gj-Gwa"/>
+                                                <constraint firstItem="ZJD-1E-7bx" firstAttribute="centerY" secondItem="HHU-iG-8zs" secondAttribute="centerY" id="hz4-Bz-fCj"/>
+                                                <constraint firstAttribute="height" constant="30" id="meA-ka-Zqq"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HHU-iG-8zs" firstAttribute="trailing" secondItem="9oy-Zs-sQe" secondAttribute="trailing" id="4XZ-LV-DaY"/>
+                                        <constraint firstAttribute="trailing" secondItem="9oy-Zs-sQe" secondAttribute="trailing" id="7hC-lR-cTB"/>
+                                        <constraint firstItem="HHU-iG-8zs" firstAttribute="bottom" secondItem="9oy-Zs-sQe" secondAttribute="bottom" id="EtK-s8-sJb"/>
+                                        <constraint firstItem="HHU-iG-8zs" firstAttribute="leading" secondItem="9oy-Zs-sQe" secondAttribute="leading" id="KD4-ky-noJ"/>
+                                        <constraint firstItem="9oy-Zs-sQe" firstAttribute="top" secondItem="EZv-Hy-UMf" secondAttribute="top" id="ZlW-9v-0aA"/>
+                                        <constraint firstAttribute="bottom" secondItem="9oy-Zs-sQe" secondAttribute="bottom" constant="60" id="fQC-2M-iOb"/>
+                                        <constraint firstItem="9oy-Zs-sQe" firstAttribute="leading" secondItem="EZv-Hy-UMf" secondAttribute="leading" id="kH6-fN-7zP"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -61,4 +86,7 @@
             <point key="canvasLocation" x="-925" y="137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sample-Psychic" width="2048" height="1365"/>
+    </resources>
 </document>
