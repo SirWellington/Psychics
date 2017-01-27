@@ -14,6 +14,7 @@
 		DEF0DC341E3C033800BBC7CE /* PsychicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC331E3C033800BBC7CE /* PsychicsTests.swift */; };
 		DEF0DC401E3C058A00BBC7CE /* Psychic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */; };
 		DEF0DC431E3C0DEA00BBC7CE /* PsychicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */; };
+		DEF0DC461E3C0F7A00BBC7CE /* PsychicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0DC451E3C0F7A00BBC7CE /* PsychicListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		DEF0DC351E3C033800BBC7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEF0DC3F1E3C058A00BBC7CE /* Psychic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Psychic.swift; sourceTree = "<group>"; };
 		DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychicCell.swift; sourceTree = "<group>"; };
+		DEF0DC451E3C0F7A00BBC7CE /* PsychicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychicListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		DEF0DC1D1E3C033800BBC7CE /* Psychics */ = {
 			isa = PBXGroup;
 			children = (
+				DEF0DC441E3C0F6C00BBC7CE /* View Controllers */,
 				DEF0DC411E3C0DDB00BBC7CE /* Cells */,
 				DEF0DC3E1E3C03D900BBC7CE /* Model */,
 				DEF0DC1E1E3C033800BBC7CE /* AppDelegate.swift */,
@@ -113,6 +116,14 @@
 				DEF0DC421E3C0DEA00BBC7CE /* PsychicCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		DEF0DC441E3C0F6C00BBC7CE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0DC451E3C0F7A00BBC7CE /* PsychicListViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF0DC461E3C0F7A00BBC7CE /* PsychicListViewController.swift in Sources */,
 				DEF0DC1F1E3C033800BBC7CE /* AppDelegate.swift in Sources */,
 				DEF0DC431E3C0DEA00BBC7CE /* PsychicCell.swift in Sources */,
 				DEF0DC401E3C058A00BBC7CE /* Psychic.swift in Sources */,
