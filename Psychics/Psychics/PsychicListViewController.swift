@@ -92,8 +92,15 @@ extension PsychicListViewController {
         cell.skills.text = psychic.skills.joined(separator: ", ")
         cell.specialties.text = psychic.specialties
         
-        guard let imageUrl = psychic.images.first else { return }
-        loadImage(url: imageUrl, into: cell)
+        
+        let imageUrl = psychic.images.map() { "\($0)" }
+            .filter() { $0.contains("/720/416") }
+            .flatMap(URL.init)
+            .first ?? psychic.images.anyElement
+        
+        if let imageUrl = imageUrl {
+            loadImage(url: imageUrl, into: cell)
+        }
     }
     
     private func loadImage(url: URL, into cell: PsychicCell) {

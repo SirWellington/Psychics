@@ -190,6 +190,7 @@
 				TargetAttributes = {
 					DEF0DC1A1E3C033700BBC7CE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5JBF7MD4UT;
 						ProvisioningStyle = Automatic;
 					};
 					DEF0DC2E1E3C033800BBC7CE = {
@@ -387,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5JBF7MD4UT;
 				INFOPLIST_FILE = Psychics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlookamusements.Psychics;
@@ -399,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5JBF7MD4UT;
 				INFOPLIST_FILE = Psychics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlookamusements.Psychics;
