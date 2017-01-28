@@ -88,7 +88,7 @@ extension PsychicListViewController {
     
     private func loadPsychicInfo(from psychic: Psychic, to cell: PsychicCell) {
         cell.psychicName.text = psychic.lineName
-        cell.psychicPrice.text = "$\(psychic.basePrice)"
+        cell.psychicPrice.text = "$\(psychic.basePrice)0/hr"
         cell.skills.text = psychic.skills.joined(separator: ", ")
         cell.specialties.text = psychic.specialties
         

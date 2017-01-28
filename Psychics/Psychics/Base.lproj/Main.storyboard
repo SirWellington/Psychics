@@ -10,12 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Psychic List View Controller-->
         <scene sceneID="ULv-zJ-qVU">
             <objects>
                 <tableViewController id="2Rh-T9-Xcn" customClass="PsychicListViewController" customModule="Psychics" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="249" sectionHeaderHeight="28" sectionFooterHeight="28" id="NaY-Zp-Z1x">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -98,7 +98,28 @@
                             <outlet property="delegate" destination="2Rh-T9-Xcn" id="ftW-v7-O1c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="TqC-Uh-fwo"/>
+                    <navigationItem key="navigationItem" id="UUd-uj-PwI">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="bzt-bB-0gi">
+                            <rect key="frame" x="113" y="6" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PSYCHICS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3IT-6K-ubF">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="3IT-6K-ubF" firstAttribute="leading" secondItem="bzt-bB-0gi" secondAttribute="leading" id="Wu5-Wf-sda"/>
+                                <constraint firstAttribute="bottom" secondItem="3IT-6K-ubF" secondAttribute="bottom" id="XFS-Jc-SwE"/>
+                                <constraint firstItem="3IT-6K-ubF" firstAttribute="top" secondItem="bzt-bB-0gi" secondAttribute="top" id="hqo-fU-MZF"/>
+                                <constraint firstAttribute="trailing" secondItem="3IT-6K-ubF" secondAttribute="trailing" id="y5f-Go-m4a"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeI-e9-LLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,9 +129,10 @@
         <scene sceneID="J78-4m-L4Z">
             <objects>
                 <navigationController id="SQc-uH-Z38" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MHr-OU-1Zp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="MHr-OU-1Zp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.42837026720635296" blue="0.17746590602207246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="2Rh-T9-Xcn" kind="relationship" relationship="rootViewController" id="YcW-gH-JOo"/>
