@@ -78,6 +78,8 @@ extension PsychicListViewController {
         guard psychics.notEmpty else { return emptyCell }
         
         let row = indexPath.row
+        guard row >= 0 && row < psychics.count else { return emptyCell }
+        
         let psychic = psychics[row]
         
         loadPsychicInfo(from: psychic, to: cell)
@@ -86,7 +88,7 @@ extension PsychicListViewController {
     
     private func loadPsychicInfo(from psychic: Psychic, to cell: PsychicCell) {
         cell.psychicName.text = psychic.lineName
-        cell.psychicPrice.text = "\(psychic.basePrice)"
+        cell.psychicPrice.text = "$\(psychic.basePrice)"
         cell.skills.text = psychic.skills.joined(separator: ", ")
         cell.specialties.text = psychic.specialties
         

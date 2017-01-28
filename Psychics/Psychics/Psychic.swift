@@ -10,9 +10,9 @@ import Foundation
 
 struct Psychic {
     
-    let extId: String
+    let extId: Int
     let lineName: String
-    let groupId: String
+    let groupId: Int
     let usp: String
     let basePrice: Double
     let isCustomerPick: Bool
@@ -31,9 +31,9 @@ struct Psychic {
     
     init?(jsonDictionary json: NSDictionary) {
         
-        guard let extId = json[JSONKeys.extId] as? String,
+        guard let extId = json[JSONKeys.extId] as? Int,
               let lineName = json[JSONKeys.lineName] as? String,
-              let groupId = json[JSONKeys.groupId] as? String,
+              let groupId = json[JSONKeys.groupId] as? Int,
               let usp = json[JSONKeys.usp] as? String,
               let basePrice = json[JSONKeys.basePrice] as? Double,
               let isCustomerPick = json[JSONKeys.isCustomerPick] as? Bool,
@@ -95,7 +95,7 @@ fileprivate struct JSONKeys {
     static let images = "images"
     static let tools = "tools"
     static let skills = "skills"
-    static let specialties = "specialties"
+    static let specialties = "specialities"
     static let style = "style"
     static let serviceStartYear = "serviceStartYear"
     
