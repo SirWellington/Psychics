@@ -119,7 +119,7 @@ extension PsychicListViewController {
                 let animations = { cell.psychicCover.image = image }
                 
                 self.main.addOperation {
-                    UIView.animate(withDuration: 0.3, delay: 0, options: .transitionCrossDissolve, animations: animations, completion: nil)
+                    UIView.transition(with: cell.psychicCover, duration: 0.3, options: .transitionCrossDissolve, animations: animations, completion: nil)
                 }
             }
         }
